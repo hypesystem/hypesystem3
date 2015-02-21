@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro',Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+    text-align: center;
+    color: rgb(24, 32, 40);
+    background: rgb(246, 250, 251);
+}
+section.main-section {
+    text-align: center;
+}
+section.main-section .short-bio {
+    margin: 150px 0 0 0;
+}
+section.main-section img {
+    width: 200px;
+    border-radius: 400px;
+    border: 6px solid white;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+}
+section.main-section h1 {
+    font-size: 4em;
+    font-weight: 900;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0 5px;
+}
+section.main-section h5 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0 5px;
+}
+section.main-section p {
+    font-size: 1.2em;
+    margin: 35px 0;
+    max-width: 800px;
+    display: inline-block;
+    font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
+    padding: 0 10px;
+}
+section.links {
+    margin-top: 100px;
+}
+section.links, footer {
+    background: rgb(24, 32, 40);
+    color: white;
+    text-align: center;
+    padding: 90px 5px 20px;
+}
+section.links a {
+    color: rgb(24, 32, 40);
+    background: white;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.1em;
+}
