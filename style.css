@@ -93,6 +93,9 @@ article.name-badge h5 {
     font-size: 1.3em;
 }
 article.contact-info {
+    text-align: right;
+    float: right;
+    margin-top: 45px;
     display: inline-block;
     font-size: 0.8em;
 }
