@@ -38,13 +38,14 @@ section.main-section h5 {
 }
 section.main-section p {
     font-size: 1.2em;
-    margin: 35px 0;
-    max-width: 525px;
+    margin: 90px 0 35px;
+    max-width: 350px;
+    width: 100%;
     text-align: left;
     display: inline-block;
     font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
-    padding: 0 10px;
-    border-left: 3px solid rgb(24, 32, 40);
+    padding: 0 15px;
+    vertical-align: top;
 }
 section.links, footer {
     background: rgb(24, 32, 40);
@@ -121,4 +122,33 @@ section.newsletter {
 .newsletter-signup-form {
     border: 5px solid rgb(24, 32, 40);
     height: 100%;
+}
+footer .years {
+    color: rgba(255,255,255,0.6);
+}
+footer .years .current-year {
+    color: white;
+}
+.blog-link-in-column {
+    font-family: 'Source Sans Pro',Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(24, 32, 40);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 35px 5px 39px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.blog-link-in-column-link-text {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding: 3px;
+    transition: border 0.5s;
+}
+.blog-link-in-column:hover .blog-link-in-column-link-text {
+    border-bottom: 3px solid white;
+    border-top: 3px solid transparent;
 }
