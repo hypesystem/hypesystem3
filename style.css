@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Source Sans Pro',Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
@@ -9,7 +12,7 @@ section.main-section {
     text-align: center;
 }
 section.main-section .short-bio {
-    margin: 150px 0 0 0;
+    margin: 120px 0 0 0;
 }
 section.main-section img {
     width: 200px;
@@ -33,13 +36,12 @@ section.main-section h5 {
 section.main-section p {
     font-size: 1.2em;
     margin: 35px 0;
-    max-width: 800px;
+    max-width: 525px;
+    text-align: left;
     display: inline-block;
     font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
     padding: 0 10px;
-}
-section.links {
-    margin-top: 100px;
+    border-left: 3px solid rgb(24, 32, 40);
 }
 section.links, footer {
     background: rgb(24, 32, 40);
@@ -47,17 +49,23 @@ section.links, footer {
     text-align: center;
     padding: 90px 5px 20px;
 }
+section.links {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 section.links a {
-    color: rgb(24, 32, 40);
-    background: white;
+    color: white;
     display: inline-block;
-    padding: 4px 12px;
-    border-radius: 15px;
+    padding: 2px;
     text-decoration: none;
-    margin: 10px;
-    font-size: 1.1em;
-    transition: border-radius 0.2s;
+    margin: 12px 20px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: border 0.5s;
 }
 section.links a:hover {
-    border-radius: 15px 0 15px 0;
+    border-bottom: 3px solid white;
 }
