@@ -80,6 +80,14 @@ section.links a:hover {
 section.newsletter {
     margin: 100px 0;
 }
+section.newsletter h1 {
+    font-size: 2.0em;
+    margin: 0;
+}
+section.newsletter p {
+    font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
+    font-size: 1.2em;
+}
 .newsletter-text {
     display: inline-block;
     width: 100%;
@@ -89,13 +97,14 @@ section.newsletter {
     padding: 25px;
 }
 .newsletter-signup-box {
+    margin-top: 17px;
     width: 312px;
     height: 280px;
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
-.newsletter-signup-box a {
+.newsletter-signup-link {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -104,7 +113,7 @@ section.newsletter {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 110px;
+    padding-top: 118px;
     transition: border 0.5s;
     font-size: 2.2em;
     position: absolute;
@@ -117,6 +126,10 @@ section.newsletter {
 }
 .newsletter-signup-link-text {
     padding: 6px;
+    border-bottom: 8px solid transparent;
+    transition: border 0.5s;
+}
+.newsletter-signup-link:hover .newsletter-signup-link-text {
     border-bottom: 8px solid white;
 }
 .newsletter-signup-form {
