@@ -78,17 +78,20 @@ section.links a:hover {
     border-bottom: 3px solid white;
 }
 section.newsletter {
-    margin: 100px 0;
+    padding: 100px 0 50px;
 }
-section.newsletter h1 {
+section.learn-to-multiply {
+    padding: 50px 0 100px;
+}
+section.newsletter h1, section.learn-to-multiply h1 {
     font-size: 2.0em;
     margin: 0;
 }
-section.newsletter p {
+section.newsletter p, section.learn-to-multiply p {
     font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
     font-size: 1.2em;
 }
-.newsletter-text {
+.newsletter-text, .learn-to-multiply-text {
     display: inline-block;
     width: 100%;
     max-width: 488px;
@@ -96,7 +99,7 @@ section.newsletter p {
     vertical-align: top;
     padding: 25px;
 }
-.newsletter-signup-box {
+.newsletter-signup-box, .learn-to-multiply-box {
     margin-top: 17px;
     width: 312px;
     height: 280px;
@@ -164,4 +167,8 @@ footer .years .current-year {
 .blog-link-in-column:hover .blog-link-in-column-link-text {
     border-bottom: 3px solid white;
     border-top: 3px solid transparent;
+}
+.learn-to-multiply-box img {
+    width: 100%;
+    border: 5px solid rgb(24, 32, 40);
 }
