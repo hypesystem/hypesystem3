@@ -12,24 +12,119 @@
             <article class="short-bio">
                 <img src="me.jpg">
                 <h1>Niels Roesen Abildgaard</h1>
-                <h5>software developer</h5>
+                <h5>Software Developer</h5>
                 <p>
-                    Software development at any level of abstraction: from nitty-gritty code cleanliness, over tools and practices, and all the way up to business organization.
-                    That's what I like.
+                    I strive to build quality software, and I am always working at getting bet&#173;ter: find that next improvement in code style, pro&#173;cess, organization, or way of inter&#173;action.<br>
+                    &nbsp;&nbsp; I write fairly regularly on my blog, topics ranging from code to company design.
+                </p>
+                <p>
+                    <a class="blog-link-in-column" href="http://blog.hypesystem.dk">
+                        <span class="blog-link-in-column-link-text">Visit blog</span>
+                    </a>
+                    <a class="blog-link-in-column" href="mailto:me@hypesystem.dk">
+                        <span class="blog-link-in-column-link-text">Email me</span>
+                    </a>
                 </p>
             </article>
         </section>
         <section class="links">
-            <a href="http://blog.hypesystem.dk">blog</a>
             <a href="http://github.com/hypesystem">github</a>
-            <a href="http://twitter.com/hypesystem">twitter</a>
-            <a href="mailto:me@hypesystem.dk">email</a>
+            <a href="https://twitter.com/hypesystem">twitter</a>
             <a href="http://stackoverflow.com/users/1080564/niels-abildgaard">stackoverflow</a>
             <a href="https://careers.stackoverflow.com/hypesystem">stackoverflow careers</a>
             <a href="https://www.linkedin.com/profile/view?id=332525190">linkedin</a>
         </section>
+        <section class="newsletter">
+            <div class="newsletter-text">
+                <h1>Keep up with what I'm doing</h1>
+                <p>
+                    If you are interested in the blog posts I write or the projects I get up to, you can sign up to my news&#173;letter to keep posted.
+                    I write fairly rarely, only ever with updates of substance.
+                    I try to be brief and not spammy.
+                </p>
+                <p>
+                    Give it a chance! (Or <a href="http://us9.campaign-archive1.com/home/?u=5f0bdfa8dbc1bc5d8903bf536&id=8f5e23610f" target="_blank">check out the archive</a> to see the kind of content that I send out.)
+                </p>
+            </div>
+            <div class="newsletter-signup-box">
+                <a class="newsletter-signup-link" href="http://maerker.us9.list-manage.com/subscribe?u=5f0bdfa8dbc1bc5d8903bf536&id=8f5e23610f" target="_blank">
+                    <span class="newsletter-signup-link-text">Sign up</span>
+                </a>
+
+                <div class="newsletter-signup-form">
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup{clear:left; width:300px;}
+                    </style>
+                    <div id="mc_embed_signup">
+                    <form action="//maerker.us9.list-manage.com/subscribe/post?u=5f0bdfa8dbc1bc5d8903bf536&amp;id=8f5e23610f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        <h2>Subscribe to mailing list</h2>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">What is your email? </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">What may I call you? </label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5f0bdfa8dbc1bc5d8903bf536_8f5e23610f" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <script>
+                    document.querySelector(".newsletter-signup-link").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        this.style = "opacity: 0;";
+                        var el = this;
+                        setTimeout(function() {
+                            el.style = "display:none;";
+                        }, 300);
+                        return false;
+                    });
+                </script>
+            </div>
+        </section>
+        <section class="learn-to-multiply">
+            <div class="learn-to-multiply-box">
+                <a href="http://hypesystem.github.io/learn-to-multiply/" target="_blank">
+                    <img src="/img/learn-to-multiply.png">
+                </a>
+            </div>
+            <div class="learn-to-multiply-text">
+                <h1>Help me test this...</h1>
+                <p>
+                    <a href="http://hypesystem.github.io/learn-to-multiply/" target="_blank">Learn to multiply</a> is a quick, little tool that aims to help learners of all ages learn their multiplication tables.
+                    I mean, it is probably most relevant for kids aged 6&ndash;14, but anyone could use it.
+                </p>
+                <p>
+                    It is based on cognitive theory, trying to form patterns in the brain of the user, by repeatedly reinforcing the correct answers.
+                </p>
+                <p>
+                    What do you think?
+                    Spotted a bug?
+                    <a href="mailto:me@hypesystem.dk">Let me know!</a>
+                </p>
+            </div>
+        </section>
         <footer>
-            &copy; Niels Roesen Abildgaard 2015
+            &copy; Niels Roesen Abildgaard 201<span class="years">{5&hellip;<span class="current-year">6</span>}</span><br>
+            Built in Copenhagen
         </footer>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-83622161-1', 'auto');
+        ga('send', 'pageview');
+        </script>
     </body>
 </html>

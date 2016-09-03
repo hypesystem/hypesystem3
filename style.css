@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Source Sans Pro',Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
@@ -5,11 +8,14 @@ body {
     color: rgb(24, 32, 40);
     background: rgb(246, 250, 251);
 }
+section {
+    text-align: center;
+}
 section.main-section {
     text-align: center;
 }
 section.main-section .short-bio {
-    margin: 150px 0 0 0;
+    margin: 120px 0 0 0;
 }
 section.main-section img {
     width: 200px;
@@ -32,14 +38,14 @@ section.main-section h5 {
 }
 section.main-section p {
     font-size: 1.2em;
-    margin: 35px 0;
-    max-width: 800px;
+    margin: 90px 0 35px;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
     display: inline-block;
     font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
-    padding: 0 10px;
-}
-section.links {
-    margin-top: 100px;
+    padding: 0 15px;
+    vertical-align: top;
 }
 section.links, footer {
     background: rgb(24, 32, 40);
@@ -47,17 +53,122 @@ section.links, footer {
     text-align: center;
     padding: 90px 5px 20px;
 }
+footer {
+    font-size: 0.9em;
+}
+section.links {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 section.links a {
-    color: rgb(24, 32, 40);
-    background: white;
+    color: white;
     display: inline-block;
-    padding: 4px 12px;
-    border-radius: 15px;
+    padding: 2px;
     text-decoration: none;
-    margin: 10px;
-    font-size: 1.1em;
-    transition: border-radius 0.2s;
+    margin: 12px 20px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: border 0.5s;
 }
 section.links a:hover {
-    border-radius: 15px 0 15px 0;
+    border-bottom: 3px solid white;
+}
+section.newsletter {
+    padding: 100px 0 50px;
+}
+section.learn-to-multiply {
+    padding: 50px 0 100px;
+}
+section.newsletter h1, section.learn-to-multiply h1 {
+    font-size: 2.0em;
+    margin: 0;
+}
+section.newsletter p, section.learn-to-multiply p {
+    font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
+    font-size: 1.2em;
+}
+.newsletter-text, .learn-to-multiply-text {
+    display: inline-block;
+    width: 100%;
+    max-width: 488px;
+    text-align: left;
+    vertical-align: top;
+    padding: 25px;
+}
+.newsletter-signup-box, .learn-to-multiply-box {
+    margin-top: 17px;
+    width: 312px;
+    height: 280px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.newsletter-signup-link {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: rgb(24, 32, 40);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 118px;
+    transition: border 0.5s;
+    font-size: 2.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    transition: opacity 0.3s;
+}
+.newsletter-signup-link-text {
+    padding: 6px;
+    border-bottom: 8px solid transparent;
+    transition: border 0.5s;
+}
+.newsletter-signup-link:hover .newsletter-signup-link-text {
+    border-bottom: 8px solid white;
+}
+.newsletter-signup-form {
+    border: 5px solid rgb(24, 32, 40);
+    height: 100%;
+}
+footer .years {
+    color: rgba(255,255,255,0.6);
+}
+footer .years .current-year {
+    color: white;
+}
+.blog-link-in-column {
+    font-family: 'Source Sans Pro',Optima,Segoe,'Segoe UI',Candara,Calibri,Arial,sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(24, 32, 40);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 35px 5px 39px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.blog-link-in-column-link-text {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding: 3px;
+    transition: border 0.5s;
+}
+.blog-link-in-column:hover .blog-link-in-column-link-text {
+    border-bottom: 3px solid white;
+    border-top: 3px solid transparent;
+}
+.learn-to-multiply-box img {
+    width: 100%;
+    border: 5px solid rgb(24, 32, 40);
 }
