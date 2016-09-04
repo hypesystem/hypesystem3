@@ -172,3 +172,37 @@ footer .years .current-year {
     width: 100%;
     border: 5px solid rgb(24, 32, 40);
 }
+@media(max-width: 711px) {
+    section.main-section h1 {
+        font-size: 3em;
+    }
+    section.main-section h5 {
+        font-size: 1.6em;
+        margin-bottom: 50px;
+    }
+    section.main-section p {
+        max-width: 460px;
+        margin: 20px 4px;
+    }
+    .blog-link-in-column {
+        padding-top: 20px;
+        padding-bottom: 24px;
+    }
+    section.links a {
+        margin: 8px 14px;
+    }
+}
+@media(max-width: 846px) {
+    section.newsletter, section.learn-to-multiply {
+        padding: 50px 0;
+    }
+    .newsletter-text, .learn-to-multiply-text {
+        padding: 15px;
+    }
+    .newsletter-signup-box, .learn-to-multiply-box {
+        margin: 0 10px;
+        height: auto;
+        width: calc(100% - 20px);
+        max-width: 470px;
+    }
+}
