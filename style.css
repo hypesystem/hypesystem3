@@ -36,6 +36,11 @@ section.main-section h5 {
     font-weight: 300;
     padding: 0 5px;
 }
+section.main-section h5 a {
+    text-decoration-skip: edges;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+}
 section.main-section p {
     font-size: 1.2em;
     margin: 90px 0 35px;
@@ -83,15 +88,15 @@ section.newsletter {
 section.learn-to-multiply {
     padding: 50px 0 100px;
 }
-section.newsletter h1, section.learn-to-multiply h1 {
+section.newsletter h1, section.learn-to-multiply h1, section.thesis h1 {
     font-size: 2.0em;
     margin: 0;
 }
-section.newsletter p, section.learn-to-multiply p {
+section.newsletter p, section.learn-to-multiply p, section.thesis p {
     font-family: 'Source Serif Pro',Georgia,Times,'Times New Roman',serif;
     font-size: 1.2em;
 }
-.newsletter-text, .learn-to-multiply-text {
+.newsletter-text, .learn-to-multiply-text, .thesis-text {
     display: inline-block;
     width: 100%;
     max-width: 488px;
@@ -99,13 +104,21 @@ section.newsletter p, section.learn-to-multiply p {
     vertical-align: top;
     padding: 25px;
 }
-.newsletter-signup-box, .learn-to-multiply-box {
+.thesis-text {
+    max-width: 650px;
+}
+.newsletter-signup-box, .learn-to-multiply-box, .thesis-box {
     margin-top: 17px;
     width: 312px;
     height: 280px;
     display: inline-block;
     vertical-align: top;
     position: relative;
+}
+.thesis-box {
+    min-width: 312px;
+    width: 100%;
+    max-width: 460px;
 }
 .newsletter-signup-link {
     display: inline-block;
@@ -168,7 +181,7 @@ footer .years .current-year {
     border-bottom: 3px solid white;
     border-top: 3px solid transparent;
 }
-.learn-to-multiply-box img {
+.learn-to-multiply-box img, .thesis-box img {
     width: 100%;
     border: 5px solid rgb(24, 32, 40);
 }
@@ -193,16 +206,17 @@ footer .years .current-year {
     }
 }
 @media(max-width: 846px) {
-    section.newsletter, section.learn-to-multiply {
+    section.newsletter, section.learn-to-multiply, section.thesis {
         padding: 50px 0;
     }
-    .newsletter-text, .learn-to-multiply-text {
+    .newsletter-text, .learn-to-multiply-text, .thesis-text {
         padding: 15px;
     }
-    .newsletter-signup-box, .learn-to-multiply-box {
+    .newsletter-signup-box, .learn-to-multiply-box, .thesis-box {
         margin: 0 10px;
         height: auto;
         width: calc(100% - 20px);
         max-width: 470px;
+        min-width: 0px;
     }
 }
